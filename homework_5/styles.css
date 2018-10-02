@@ -1,0 +1,37 @@
+/* COLORS */
+/* brown 653A14 */
+
+/* NAV */
+
+body {
+	font-family: "Open Sans";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+	display: inline;
+	float:left;
+	padding: 20px;
+	color: #653A14;
+	font-weight:300;
+
+}
+
+li a {
+	text-decoration: none;
+	color: #653A14;
+
+}
+
+#sign-in {
+	float: right;
+}
+
+#logo {
+	color: #653A14;
+	font-weight:700;
+}
