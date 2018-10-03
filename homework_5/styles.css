@@ -1,10 +1,20 @@
 /* COLORS */
 /* brown 653A14 */
 
-/* NAV */
-
 body {
 	font-family: "Open Sans";
+	margin: 0;
+}
+
+/* NAV */
+
+nav {
+	margin: 0;
+	/*background-color: blue;*/
+	box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
+	overflow: hidden;
+	padding-top: 5px;
+
 }
 
 ul {
@@ -34,4 +44,49 @@ li a {
 #logo {
 	color: #653A14;
 	font-weight:700;
+}
+
+#icon {
+	padding: 0px;
+	padding-top: 15px;
+}
+
+/* FULL SCREEN IMG */
+
+.bg {
+	/*text-align: center;*/
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    /*z-index: 1;*/
+}​
+
+.container {
+	position: relative;
+	display: inline-block;	
+}
+
+
+.descr {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 30%;
+    /*transform: translate( -50%, -50% );*/
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.button {
+	background-color: #653A14;
+	border: none;
+	color: white;
+	padding: 12px 70px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	font-weight: bold;
+
 }
