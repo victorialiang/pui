@@ -1,5 +1,5 @@
 /* COLORS */
-/* brown 653A14 */
+/* brown #653A14 */
 
 body {
 	font-family: "Open Sans";
@@ -88,5 +88,145 @@ li a {
 	font-size: 0.8em;
 	letter-spacing: 2px;
 	font-weight: bold;
+
+}
+
+/* PRODUCT PAGE */
+
+#sidepic {
+	float: left;
+	width: 20%;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    overflow: hidden
+    background-color: blue;
+}
+#sidepic img {
+    flex-shrink: 0;
+    max-width:100%;
+	max-height:100%;
+   
+}
+
+/* reference: https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional; */
+
+#products {
+	width: 80%;
+	float: right;
+}
+
+#products-top {
+	/*background-color: blue;*/
+	padding: 30px;
+	padding-left: 40px;
+}
+
+h3 {
+	font-size: 2.3em;
+	color: #653A14;
+	display: inline-block;
+	margin: 0;
+	width: 15%;
+}
+
+#filter {
+	width: 85%;
+	float: right;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+
+}
+
+.check-container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 20px;
+}
+
+/* PRODUCT BOTTOM */
+
+#products-bottom {
+	/*background-color: red;*/
+	display:flex;
+	flex-wrap: wrap;
+}
+
+#product {
+	/*background-color: gray;*/
+	/*border: blue;*/
+	margin: 30px;
+	width: 25%;
+}
+
+#product img {
+	width: 65%;
+	margin-left: 20px;
+    margin-right: auto;
+    /*display: block;*/
+}
+
+h4 {
+	display: inline-block;
+	margin-left: 20px;
+	
+}
+
+#name {
+	width: 40%;
+}
+
+#price {
+	float: right;
+	width: 15%;
+	margin-left: 0px;
+}
+
+#colors {
+	width: 15%;
+	float:right;
+}
+
+.red-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #EE7A89;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.blue-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #79B0F1;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+.green-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #96C65E;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+.yellow-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #F3C67D;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
 
 }
