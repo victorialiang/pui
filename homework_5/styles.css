@@ -88,6 +88,7 @@ li a {
 	font-size: 0.8em;
 	letter-spacing: 2px;
 	font-weight: bold;
+	cursor: pointer;
 
 }
 
@@ -127,6 +128,10 @@ h3 {
 	color: #653A14;
 	display: inline-block;
 	margin: 0;
+	/*width: 15%;*/
+}
+
+#products h3 {
 	width: 15%;
 }
 
@@ -198,7 +203,7 @@ h4 {
   background-color: #EE7A89;
   border-radius: 50%;
   display: inline-block;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 .blue-dot {
@@ -207,7 +212,7 @@ h4 {
   background-color: #79B0F1;
   border-radius: 50%;
   display: inline-block;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 
 }
 
@@ -217,7 +222,7 @@ h4 {
   background-color: #96C65E;
   border-radius: 50%;
   display: inline-block;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 
 }
 
@@ -227,6 +232,67 @@ h4 {
   background-color: #F3C67D;
   border-radius: 50%;
   display: inline-block;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
+
+}
+
+/* PRODUCT PAGE */
+
+#product-section {
+	width: 80%;
+	margin: auto;
+	margin-top: 2%;
+}
+
+#product-section img {
+	width: 35%;
+	float: left;
+}
+
+#product-right {
+	display: inline-block;
+	width: 45%;
+	margin: 20px;
+	margin-left: 100px;
+}
+
+#product-section h3 {
+	/*width: 50%;*/
+	/*margin: 1%;
+	margin-left: 3%;*/
+}
+
+#page-price {
+	display: inline-block;
+	width: 15%;
+	float: right;
+}
+
+#label {
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	width: 20%;
+	display: inline-block;
+}
+
+#sizes {
+	display: inline-block;
+	width: 60%;
+	letter-spacing: 20px;
+	margin-bottom: 0px;
+}
+
+.sec-button {
+	background-color: white;
+	border: none;
+	color: #653A14;
+	padding: 12px 70px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	border: 2px solid #653A14;
+	cursor: pointer;
+	/*font-weight: bold;*/
 
 }
