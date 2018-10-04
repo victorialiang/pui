@@ -1,5 +1,7 @@
 /* COLORS */
 /* brown #653A14 */
+/* pinkish brownish bg #F5F1EF */
+
 
 body {
 	font-family: "Open Sans";
@@ -178,7 +180,7 @@ h3 {
 
 h4 {
 	display: inline-block;
-	margin-left: 20px;
+	/*margin-left: 20px;*/
 	
 }
 
@@ -294,5 +296,46 @@ h4 {
 	border: 2px solid #653A14;
 	cursor: pointer;
 	/*font-weight: bold;*/
+}
 
+#product-bottom {
+	background-color: #F5F1EF;
+	margin-top: 3%;
+}
+
+#product-bottom2 {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 20px;
+    /*margin-left: 20px;*/
+}
+
+#review-pic {
+	margin-bottom: 20px;
+	width: 10%;
+	float: left;
+	/*margin-top: 20px;*/
+}
+
+#review-right {
+	display: inline-block;
+	width: 80%;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-size: 0.9em;
+
+}
+
+#star {
+	display: inline-block;
+	max-width: 20px;
+	max-height: 20px;
+}
+
+#review {
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
 }
