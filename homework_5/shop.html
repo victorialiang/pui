@@ -14,9 +14,9 @@
           <li id="icon"><img src="paw.png" height="25" width="25"></li>
           <li id="logo"><a href="index.html">Muddy Paws</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li>Contact</a></li>
-          <li id="sign-in"><img src="cart.png" height="25" width="25"></li>
-          <li id="sign-in">Sign In</li>
+          <li>Contact</li>
+          <li class="sign-in"><img src="cart.png" height="25" width="25"></li>
+          <li class="sign-in">Sign In</li>
         </ul>
     </nav>
 
@@ -27,19 +27,24 @@
     <div id="products">
       <div id="products-top">
           <h3>Shop</h3> 
-          <p id="filter">
-            FILTER <label class="check-container">cat
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-          <label class="check-container">dog
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
 
+          <!-- checkbox filter for type of pet !-->
+
+          <p id="filter">
+            FILTER 
+            <label class="check-container">cat
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="check-container">dog
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
           </p>
           
       </div>
+
+      <!-- grid of 6 different products !-->
 
       <div id="products-bottom">
         <div id="product">
@@ -57,7 +62,7 @@
         </div>
 
          <div id="product">
-          <img src="cat_harness.png">
+          <a href="cat-harness.html"><img src="cat_harness.png"></a>
 
           <div id="colors">
             <span class="red-dot"></span>
@@ -66,7 +71,7 @@
             <span class="yellow-dot"></span>
           </div>
 
-          <h4 id="name">Cat Harness</h4>
+          <a href="cat-harness.html"><h4 id="name">Cat Harness</h4></a>
           <h4 id="price">$99</h4>
         </div>
 
