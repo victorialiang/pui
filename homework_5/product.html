@@ -7,6 +7,9 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
     <script src="scripts.js"></script>
 
 </head>
@@ -23,14 +26,20 @@
         </ul>
     </nav>
 
-    <div id="product-section">
-      <img src="dog_harness.png">
+    <div class="product-section">
+
+      <div id="product-left">
+        <img data-image="green" src="dog_harness-green.png" alt="">
+        <img data-image="red" src="dog_harness-red.png" alt="">
+        <img data-image="yellow" src="dog_harness-yellow.png" alt="">
+        <img data-image="blue" class="active" src="dog_harness.png" alt="">
+      </div>
 
       <!-- product description goes to right of the product image !-->
 
       <div id="product-right">
-        <h3>Dog Harness</h3>
-        <h3 id="page-price">$99</h3>
+        <h3><div class="productName">Dog Harness</div></h3>
+        <h3 class="page-price">$99</h3>
         <p>A durable, comfortable harness perfect for taking your dog out on hikes and walks.</p>
         <h6 class="label">SIZE</h6>
 
@@ -71,29 +80,28 @@
         </p> -->
 
         <div class="color-choose">
-          <input type="radio" name="color" id="red"/>
+          <input data-image="red" type="radio" name="color" id="red"/>
           <label for="red"><span class="red-dot"></span></label>
 
-          <input type="radio" name="color" id="blue"/>
+          <input data-image="blue" type="radio" name="color" id="blue"/>
           <label for="blue"><span class="blue-dot"></span></label>
 
-          <input type="radio" name="color" id="green"/>
+          <input data-image="green" type="radio" name="color" id="green"/>
           <label for="green"><span class="green-dot"></span></label>
 
-          <input type="radio" name="color" id="yellow"/>
+          <input data-image="yellow" type="radio" name="color" id="yellow"/>
           <label for="yellow"><span class="yellow-dot"></span></label>
 
            
         </div>
 
         <p>
-        <button class="sec-button">ADD TO CART</button>
+        <button id="button-storage" class="sec-button">ADD TO CART</button>
       </p>
       </div>
     </div>
 
     <!-- review section !-->
-
     <div id="product-bottom">
       <div id="product-bottom2">
         <h4>Reviews</h4>
@@ -124,7 +132,6 @@
 
       </div>
     </div>
-
    
 </body>
 

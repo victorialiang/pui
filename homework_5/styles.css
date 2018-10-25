@@ -221,25 +221,40 @@ h4 {
 
 /* PRODUCT PAGE */
 
-#product-section {
+.product-section {
 	width: 80%;
 	margin: auto;
 	margin-top: 2%;
+	position: relative;
 }
 
-#product-section img {
+#product-left {
 	width: 35%;
+	position: relative;
+}
+
+#product-left img {
+	width: 100%;
+	position: absolute;
 	float: left;
+	opacity: 0;
+	/*transition: all 0.3s ease;*/
+}
+
+#product-left img.active {
+	opacity: 1;
 }
 
 #product-right {
-	display: inline-block;
+	/*display: inline-block;*/
 	width: 45%;
 	margin: 20px;
 	margin-left: 100px;
+	float: right;
+	position: relative;
 }
 
-#page-price {
+.page-price {
 	display: inline-block;
 	width: 15%;
 	float: right;
@@ -272,10 +287,16 @@ li:active,
 li:focus,
 li:target {
 	font-weight: bold;
+
 }
 
 input {
 	display: none;
+}
+
+label:hover{
+	cursor: pointer;
+
 }
 
 label {
@@ -325,6 +346,9 @@ label {
 #product-bottom {
 	background-color: #F5F1EF;
 	margin-top: 3%;
+	/*position: relative;*/
+	width: 100%;
+	clear: both;
 }
 
 #product-bottom2 {
