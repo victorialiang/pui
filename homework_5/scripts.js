@@ -86,21 +86,35 @@ $(document).ready(function() {
 		var product = localStorage.getItem("product");
 		if (product=="dog-harness"){
 			$(".productName").html("Dog Harness");
+			$(".productDesc").html("A durable, comfortable harness perfect for taking your dog out on hikes and walks.");
+			$("#product-left").html("<img data-image='green' src='dog_harness-green.png' alt=''><img data-image='red' src='dog_harness-red.png' alt=''><img data-image='yellow' src='dog_harness-yellow.png' alt=''><img data-image='blue' class='active' src='dog_harness.png' alt=''>");
+
 		}
 		if (product=="cat-harness"){
 			$(".productName").html("Cat Harness");
+			$(".productDesc").html("A beautiful harness perfect for taking your cat out on hikes and walks whether they want to or not!");
+			$("#product-left").html("<img data-image='green' src='cat_harness-green.png' alt=''><img data-image='red' src='cat_harness.png' alt=''><img data-image='yellow' src='cat_harness-yellow.png' alt=''><img data-image='blue' class='active' src='cat_harness-blue.png' alt=''>");
+			
 		}
 		if (product=="food"){
 			$(".productName").html("Food Storage Unit");
+			$(".productDesc").html("A storage unit for keeping your pet's favorite snacks while on the go.");
+			$("#product-left").html("<img data-image='green' src='attachment.png' alt=''><img data-image='red' src='attachment.png' alt=''><img data-image='yellow' src='attachment.png' alt=''><img data-image='blue' class='active' src='attachment.png' alt=''>");
 		}
 		if (product=="water"){
 			$(".productName").html("Water Storage Unit");
+			$(".productDesc").html("A water storage unit for keeping your pet's favorite drinks while on the go.");
+			$("#product-left").html("<img data-image='green' src='attachment.png' alt=''><img data-image='red' src='attachment.png' alt=''><img data-image='yellow' src='attachment.png' alt=''><img data-image='blue' class='active' src='attachment.png' alt=''>");
 		}
 		if (product=="gps"){
 			$(".productName").html("GPS Tracker");
+			$(".productDesc").html("A GPS tracker so you never lose your pets.");
+			$("#product-left").html("<img data-image='green' src='collar.png' alt=''><img data-image='red' src='collar.png' alt=''><img data-image='yellow' src='collar.png' alt=''><img data-image='blue' class='active' src='collar.png' alt=''>");
 		}
 		if (product=="backpack"){
 			$(".productName").html("Cat Backpack");
+			$(".productDesc").html("A beautiful backpack for making your cat carry your snacks.");
+			$("#product-left").html("<img data-image='green' src='backpack.png' alt=''><img data-image='red' src='backpack.png' alt=''><img data-image='yellow' src='backpack.png' alt=''><img data-image='blue' class='active' src='backpack.png' alt=''>");
 		}
 	}
 
@@ -135,18 +149,7 @@ $(document).ready(function() {
       $('.active').removeClass('active');
       $('.product-section img[data-image = ' + color + ']').addClass('active');
       $(this).addClass('active');
-      if (color==="red"){
-      	$(".page-price").html("$50");
-      }
-      if (color==="green"){
-      	$(".page-price").html("$70");
-      }
-      if (color==="blue"){
-      	$(".page-price").html("$99");
-      }
-      if (color==="yellow"){
-      	$(".page-price").html("$50");
-      }
+      
 
 
   });
