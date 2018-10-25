@@ -69,10 +69,13 @@ $(document).ready(function() {
 	$("#cart-number").text("(" + len + ")");
 
 	for(;i<len;i++){
-		text += loadedCart[i].name + " " + loadedCart[i].color + " " +loadedCart[i].size+ " "+ loadedCart[i].cost + "\n";
+		text += loadedCart[i].name + " " + loadedCart[i].color + " " +loadedCart[i].size+ " "+ loadedCart[i].cost + "<br />";
 	}
 
-	 $("#cart-content").text(text);
+	// text = text.replace(/\n/g, "<br />");
+
+
+	 $("#cart-content").html(text);
 
 
 
