@@ -6,6 +6,11 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -48,7 +53,10 @@
       <!-- grid of 6 different products !-->
 
       <div id="products-bottom">
-        <div class="product" id="dog-harness">
+        <div class="product" data-image="dog-harness">
+<!--         <input data-image="dog-harness" type="radio" name="product" id="dog-harness"/> -->
+          <!-- <label for="dog-harness"> -->
+        <!-- <div class="product" id="dog-harness"> -->
           <a href="product.html"><img src="dog_harness.png"></a>
 
           <div id="colors">
@@ -60,10 +68,14 @@
 
           <a href="product.html"><h4 id="name">Dog Harness</h4></a>
           <h4 id="price">$99</h4>
+
+          <!-- </label> -->
+
+
         </div>
 
-         <div class="product" id="cat-harness">
-          <a href="cat-harness.html"><img src="cat_harness.png"></a>
+         <div class="product" data-image="cat-harness">
+          <a href="product.html"><img src="cat_harness.png"></a>
 
           <div id="colors">
             <span class="red-dot"></span>
@@ -72,12 +84,12 @@
             <span class="yellow-dot"></span>
           </div>
 
-          <a href="cat-harness.html"><h4 id="name">Cat Harness</h4></a>
+          <a href="product.html"><h4 id="name">Cat Harness</h4></a>
           <h4 id="price">$99</h4>
         </div>
 
-         <div class="product" id="food">
-          <img src="attachment.png">
+         <div class="product" data-image="food">
+          <a href="product.html"><img src="attachment.png"></a>
 
           <div id="colors">
             <span class="red-dot"></span>
@@ -86,12 +98,12 @@
             <span class="yellow-dot"></span>
           </div>
 
-          <h4 id="name">Food Storage Attachment</h4>
+         <a href="product.html"> <h4 id="name">Food Storage Attachment</h4></a>
           <h4 id="price">$99</h4>
         </div>
 
-         <div class="product" id="water">
-          <img src="attachment.png">
+         <div class="product" data-image="water">
+          <a href="product.html"><img src="attachment.png"></a>
 
           <div id="colors">
             <span class="red-dot"></span>
@@ -100,12 +112,12 @@
             <span class="yellow-dot"></span>
           </div>
 
-          <h4 id="name">Water Storage Attachment</h4>
+         <a href="product.html"> <h4 id="name">Water Storage Attachment</h4></a>
           <h4 id="price">$99</h4>
         </div>
 
-         <div class="product" id="gps">
-          <img src="collar.png">
+         <div class="product" data-image="gps">
+          <a href="product.html"><img src="collar.png"></a>
 
           <div id="colors">
             <span class="red-dot"></span>
@@ -114,12 +126,12 @@
             <span class="yellow-dot"></span>
           </div>
 
-          <h4 id="name">GPS Tracker Collar</h4>
+          <a href="product.html"><h4 id="name">GPS Tracker Collar</h4></a>
           <h4 id="price">$99</h4>
         </div>
 
-         <div class="product" id="backpack">
-          <img src="backpack.png">
+         <div class="product" data-image="backpack">
+          <a href="product.html"><img src="backpack.png"></a>
 
           <div id="colors">
             <span class="red-dot"></span>
@@ -128,7 +140,7 @@
             <span class="yellow-dot"></span>
           </div>
 
-          <h4 id="name">Cat Backpack</h4>
+          <a href="product.html"><h4 id="name">Cat Backpack</h4></a>
           <h4 id="price">$99</h4>
         </div>
       </div>

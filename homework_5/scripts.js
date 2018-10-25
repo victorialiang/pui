@@ -78,6 +78,35 @@ function removeFromCart(product) {
 
 $(document).ready(function() {
 
+
+	if (localStorage.getItem("product") == null){
+
+	}
+	else {
+		var product = localStorage.getItem("product");
+		if (product=="dog-harness"){
+			$(".productName").html("Dog Harness");
+		}
+		if (product=="cat-harness"){
+			$(".productName").html("Cat Harness");
+		}
+		if (product=="food"){
+			$(".productName").html("Food Storage Unit");
+		}
+		if (product=="water"){
+			$(".productName").html("Water Storage Unit");
+		}
+		if (product=="gps"){
+			$(".productName").html("GPS Tracker");
+		}
+		if (product=="backpack"){
+			$(".productName").html("Cat Backpack");
+		}
+	}
+
+
+	 
+
 	var loadedCart = loadCart();
 	var i=0;
 	var len=loadedCart.length;
@@ -97,8 +126,8 @@ $(document).ready(function() {
 		$("#cart-content").html("There are no items in your cart.");
 	}
 
-
-
+ 
+ 
  
   $('.color-choose input').on('click', function() {
       color = $(this).attr('data-image');
@@ -121,6 +150,17 @@ $(document).ready(function() {
 
 
   });
+
+  $(".product").click(function() {
+  	console.log("hi");
+  	var product = $(this).attr('data-image');
+  	console.log(product);
+  	localStorage.setItem("product", product);
+  	// $(".productName").html("Hi");
+
+  })
+
+
 
 
   $("#button-storage").click(function() {
@@ -145,7 +185,8 @@ $(document).ready(function() {
   	localStorage.removeItem($(this));
 	removeFromCart($(this));
     $(this).parent().remove();
-  })
+  });
+
 
   $("#clear-cart").click(function() {
   	localStorage.clear();
@@ -153,7 +194,9 @@ $(document).ready(function() {
   	// loadCart();
   	saveCart();
   	loadCart();
-  })
+  });
+
+  
  
 });
 
@@ -165,5 +208,16 @@ $(document).on("click", "#clear-cart", function() {
   	loadCart();
 
 });
+
+
+
+// $(document).on("click", "h4", function() {
+// 	var item = $(".product").attr('name');
+// 	if (item == "cat-harness"){
+// 		$(".productName").html("Cat Harness");
+
+// 	}
+
+// });
 
 
