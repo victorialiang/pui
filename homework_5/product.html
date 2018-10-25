@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+    <script src="scripts.js"></script>
+
 </head>
 
 <body>
@@ -29,15 +32,63 @@
         <h3>Dog Harness</h3>
         <h3 id="page-price">$99</h3>
         <p>A durable, comfortable harness perfect for taking your dog out on hikes and walks.</p>
-        <h6 class="label">SIZE</h6> <p class="sizes">T S M L</p>
+        <h6 class="label">SIZE</h6>
+
+          <div class="size-choose">
+            <input type="radio" name="size" id="tiny"/>
+            <label for="tiny">Tiny</label>
+
+            <input type="radio" name="size" id="small"/>
+            <label for="small">Small</label>
+
+            <input type="radio" name="size" id="medium"/>
+            <label for="medium">Medium</label>
+
+            <input type="radio" name="size" id="large"/>
+            <label for="large">Large</label>
+          </div>
+         <!--  <p class="sizes">
+            <li>T</li> 
+            <li>S</li> 
+            <li>M</li> 
+            <li>L</li>
+          </p> -->
+
+         <!--  <div class="size-choose">
+            <button>Tiny</button>
+            <button>Small</button>
+            <button>Medium</button>
+            <button>Large</button>
+          </div> -->
+
+
         <h6 class="label">COLOR</h6>
-        <p class="sizes">
+        <!-- <p class="sizes">
             <span class="red-dot"></span>
             <span class="blue-dot"></span>
             <span class="green-dot"></span>
             <span class="yellow-dot"></span>
-        </p>
+        </p> -->
+
+        <div class="color-choose">
+          <input type="radio" name="color" id="red"/>
+          <label for="red"><span class="red-dot"></span></label>
+
+          <input type="radio" name="color" id="blue"/>
+          <label for="blue"><span class="blue-dot"></span></label>
+
+          <input type="radio" name="color" id="green"/>
+          <label for="green"><span class="green-dot"></span></label>
+
+          <input type="radio" name="color" id="yellow"/>
+          <label for="yellow"><span class="yellow-dot"></span></label>
+
+           
+        </div>
+
+        <p>
         <button class="sec-button">ADD TO CART</button>
+      </p>
       </div>
     </div>
 

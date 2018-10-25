@@ -189,6 +189,7 @@ h4 {
   background-color: #EE7A89;
   border-radius: 50%;
   display: inline-block;
+  /*border: 3px solid black;*/
 }
 
 .blue-dot {
@@ -248,15 +249,64 @@ h4 {
 	font-size: 0.8em;
 	letter-spacing: 1px;
 	width: 20%;
-	display: inline-block;
+	margin-bottom: 3%;
+	/*display: inline-block;*/
 }
 
 .sizes {
 	display: inline-block;
-	width: 60%;
+	/*width: 60%;*/
 	letter-spacing: 20px;
 	margin-bottom: 0px;
 }
+
+.sizes li {
+	/*display: inline-block;*/
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+li:hover,
+li:active,
+li:focus,
+li:target {
+	font-weight: bold;
+}
+
+input {
+	display: none;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-right: 3%;
+}
+
+#tiny:checked + label,
+#small:checked + label,
+#medium:checked + label,
+#large:checked + label {
+	font-weight: bold;
+}
+
+#red:checked + label .red-dot{
+	border: 3px solid black;
+}
+
+#blue:checked + label .blue-dot{
+	border: 3px solid black;
+}
+
+#green:checked + label .green-dot{
+	border: 3px solid black;
+}
+
+#yellow:checked + label .yellow-dot{
+	border: 3px solid black;
+}
+
 
 .sec-button {
 	background-color: white;
@@ -268,6 +318,7 @@ h4 {
 	font-size: 0.8em;
 	letter-spacing: 2px;
 	border: 2px solid #653A14;
+	margin-top: 5%;
 	cursor: pointer;
 }
 
@@ -309,4 +360,11 @@ h4 {
 
 a {
 	text-decoration: none;
+}
+
+/* CART */
+
+#cart-content {
+	color: #F5F1EF;
+	margin: auto;
 }
