@@ -21,8 +21,8 @@
           <li id="logo"><a href="index.html">Muddy Paws</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li>Contact</li>
-          <li class="sign-in" id="cart-number"></li>
-          <li class="sign-in" id="cart-icon"><img src="cart.png" height="25" width="25"></li>
+          <li class="sign-in" id="cart-number"><a href="cart.html"></a></li>
+          <li class="sign-in" id="cart-icon"><a href="cart.html"><img src="cart.png" height="25" width="25"></a></li>
           <li class="sign-in">Sign In</li>
         </ul>
     </nav>
@@ -30,17 +30,26 @@
     <div class="product-section">
 
       <div id="cart-left">
-        <h3>My Cart (x)</h3>
+        <h3>My Cart</h3>
+        <ul>
         <div id="cart-content">
+
           <!-- <div id="saved" -->
         </div>
+        </ul>
+
+
       </div>
 
       <div id="cart-right">
-        <div class="label">SUBTOTAL</div>
-        <div class="label">TAX</div>
-        <div class="label">SHIPPING</div>
-        <div class="label">TOTAL</div>
+
+        <br><br><br>
+        <div class="label">SUBTOTAL: XX</div>
+        <div class="label">TAX: XX</div>
+        <div class="label">SHIPPING: XX</div>
+        <div class="label">TOTAL: XX</div>
+        <button class="sec-button" id="clear-cart">CLEAR CART</button>
+        <button class="button">CHECKOUT</button>
       </div>
     </div>
 

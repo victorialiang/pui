@@ -19,11 +19,15 @@ nav {
 }
 
 ul {
+	list-style-type: none;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
 }
 
-li {
+nav li {
 	display: inline;
 	float:left;
 	padding: 20px;
@@ -87,6 +91,8 @@ li a {
 	letter-spacing: 2px;
 	font-weight: bold;
 	cursor: pointer;
+	border: 2px solid #653A14;
+
 
 }
 
@@ -151,12 +157,12 @@ h3 {
 	flex-wrap: wrap;
 }
 
-#product {
+.product {
 	margin: 30px;
 	width: 25%;
 }
 
-#product img {
+.product img {
 	width: 65%;
 	margin-left: 20px;
     margin-right: auto;
@@ -263,7 +269,7 @@ h4 {
 .label {
 	font-size: 0.8em;
 	letter-spacing: 1px;
-	width: 20%;
+	width: 21%;
 	margin-bottom: 3%;
 	/*display: inline-block;*/
 }
@@ -290,9 +296,12 @@ li:target {
 
 }
 
-input {
+.color-choose input,
+.size-choose input {
 	display: none;
 }
+
+
 
 label:hover{
 	cursor: pointer;
@@ -399,4 +408,58 @@ a {
 #cart-number {
 	margin: 0;
 	padding-left: 0;
+}
+
+.delete-item {
+	float: right;
+}
+
+#cart-left ul{
+	padding-inline-start: 0px;
+
+}
+
+#cart-left li{
+	padding: 1%;
+
+}
+
+#cart-right{
+	float: right;
+}
+
+.pname {
+	width: 30%;
+	display: inline-block;
+}
+
+.pcolor {
+	width: 10%;
+	display: inline-block;
+}
+
+.psize {
+	width: 10%;
+	display: inline-block;
+}
+
+.pcost {
+	width: 30%;
+	display: inline-block;
+	text-align: right;
+	/*float: right;*/
+}
+
+.delete-item{
+	background-color: white;
+	border: none;
+	color: #653A14;
+	padding: 5px 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	/*border: 1px solid #653A14;*/
+	/*margin-top: 5%;*/
+	cursor: pointer;
 }
