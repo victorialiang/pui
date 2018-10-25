@@ -389,6 +389,14 @@ a {
 /* CART */
 
 #cart-content {
-	color: #F5F1EF;
+	background-color: #F5F1EF;
 	margin: auto;
+}
+
+#cart-icon {
+	padding-right: 5px;
+}
+#cart-number {
+	margin: 0;
+	padding-left: 0;
 }

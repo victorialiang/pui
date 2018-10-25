@@ -6,6 +6,12 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -15,7 +21,8 @@
           <li id="logo"><a href="index.html">Muddy Paws</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li>Contact</li>
-          <li class="sign-in"><img src="cart.png" height="25" width="25"></li>
+          <li class="sign-in" id="cart-number"></li>
+          <li class="sign-in" id="cart-icon"><img src="cart.png" height="25" width="25"></li>
           <li class="sign-in">Sign In</li>
         </ul>
     </nav>
@@ -25,6 +32,7 @@
       <div id="cart-left">
         <h3>My Cart (x)</h3>
         <div id="cart-content">
+          <!-- <div id="saved" -->
         </div>
       </div>
 

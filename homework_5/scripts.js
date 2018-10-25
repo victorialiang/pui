@@ -5,21 +5,26 @@ var cart = [];
 
 /** Functions **/
 
-function Product(name, picture, color, cost, quantity) {
+function Product(name, color, size, cost) {
 	this.name = name;
-	this.picture = picture;
-	this.cost = cost;
-	this.quantity = quantity;
+	// this.picture = picture;
 	this.color = color;
+	// this.quantity = quantity;
+	this.size = size;
+	this.cost = cost;
 }
 
 
 function loadCart() {
 	//get cart
+	var loadedCart = JSON.parse(localStorage.getItem("savedCart"));
+	return loadedCart;
 
 }
 
 function saveCart() {
+
+	localStorage.setItem("savedCart", JSON.stringify(cart));
 
 }
 
@@ -28,6 +33,9 @@ function addToCart(product) {
 	//check if product is already in cart, append new product to cart
 	//call savecart
 
+	cart.push(product);
+	saveCart();
+
 
 }
 
@@ -35,24 +43,45 @@ function addToCart(product) {
 /*** Document Load ***/
 
 $(document).ready(function() {
+
+	var loadedCart = loadCart();
+	var i=0;
+	var len=loadedCart.length;
+	var text="";
+
+	$("#cart-number").text("(" + len + ")");
+
+	for(;i<len;i++){
+		text += loadedCart[i].name;
+	}
+
+	 $("#cart-content").text(text);
+
+
+
  
   $('.color-choose input').on('click', function() {
-      var harnessColor = $(this).attr('data-image');
+      harnessColor = $(this).attr('data-image');
  
       $('.active').removeClass('active');
       $('.product-section img[data-image = ' + harnessColor + ']').addClass('active');
       $(this).addClass('active');
   });
 
-  // $("#button-storage").click(function() {
-  // 	var name = $(".productName")[0].innerText;
-  // 	var cost = $(".page-price")[0].innerText;
-  // 	var color = $(".color-choose input").attr('data-image');
-  // 	var picture = $("product-section img[data-image=" + color + ']');
-  // 	var quantity = 1;
 
-  // 	var product = new Product(name, picture, color, cost, quantity);
-  // 	addToCart(product);
-  // });
+  $("#button-storage").click(function() {
+  	var name = $(".productName")[0].innerText;
+  	var cost = $(".page-price")[0].innerText;
+  	var color = $("input[name='color']:checked").attr('id');
+  	var size = $("input[name='size']:checked").attr('id');
+
+  	// var picture = $("product-section img[data-image=" + color + ']');
+  	// var quantity = 1;
+
+  	var product = new Product(name, color, size, cost);
+  	addToCart(product);
+
+
+  });
  
 });
