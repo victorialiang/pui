@@ -1,9 +1,5 @@
-/*** Global Variables **/
-
-var cart = [];
-
-
 /** Functions **/
+// localStorage.clear();
 
 function Product(name, color, size, cost) {
 	this.name = name;
@@ -16,9 +12,28 @@ function Product(name, color, size, cost) {
 
 
 function loadCart() {
+
+	var cart;
+
 	//get cart
-	var loadedCart = JSON.parse(localStorage.getItem("savedCart"));
-	return loadedCart;
+	if(localStorage.getItem("savedCart")) {
+		cart = localStorage.getItem("savedCart");
+		var loadedCart = JSON.parse(cart);
+		var i=0;
+		var len=loadedCart.length;
+		var text="";
+
+		$("#cart-number").text("(" + len + ")");
+		return loadedCart;
+
+	} else {
+		cart = [];
+		// saveCart();
+		return cart;
+	}
+
+	
+	// return loadedCart;
 
 }
 
@@ -33,8 +48,10 @@ function addToCart(product) {
 	//check if product is already in cart, append new product to cart
 	//call savecart
 
+	cart = loadCart();
 	cart.push(product);
 	saveCart();
+	loadCart();
 
 
 }
@@ -52,7 +69,7 @@ $(document).ready(function() {
 	$("#cart-number").text("(" + len + ")");
 
 	for(;i<len;i++){
-		text += loadedCart[i].name;
+		text += loadedCart[i].name + " " + loadedCart[i].color + " " +loadedCart[i].size+ " "+ loadedCart[i].cost + "\n";
 	}
 
 	 $("#cart-content").text(text);
