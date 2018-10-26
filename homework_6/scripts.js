@@ -1,11 +1,9 @@
 /** Functions **/
-// localStorage.clear();
 
+//Product object for each product to add to cart
 function Product(name, color, size, cost) {
 	this.name = name;
-	// this.picture = picture;
 	this.color = color;
-	// this.quantity = quantity;
 	this.size = size;
 	this.cost = cost;
 }
@@ -29,12 +27,8 @@ function loadCart() {
 	} else {
 		cart = [];
 		$("#cart-number").text("(0)");
-		// saveCart();
 		return cart;
 	}
-
-	
-	// return loadedCart;
 
 }
 
@@ -70,12 +64,6 @@ function removeFromCart(product) {
 
 /*** Document Load ***/
 
-// $(document).on("click", ".delete-item", function() {
-// 	localStorage.removeItem($(this).parent());
-// 	removeFromCart($(this).parent());
-//     $(this).parent().remove();
-// });
-
 $(document).ready(function() {
 
 
@@ -87,34 +75,34 @@ $(document).ready(function() {
 		if (product=="dog-harness"){
 			$(".productName").html("Dog Harness");
 			$(".productDesc").html("A durable, comfortable harness perfect for taking your dog out on hikes and walks.");
-			$("#product-left").html("<img data-image='green' src='dog_harness-green.png' alt=''><img data-image='red' src='dog_harness-red.png' alt=''><img data-image='yellow' src='dog_harness-yellow.png' alt=''><img data-image='blue' class='active' src='dog_harness.png' alt=''>");
+			$("#product-left").html("<img data-image='green' src='images/dog_harness-green.png' alt=''><img data-image='red' src='images/dog_harness-red.png' alt=''><img data-image='yellow' src='images/dog_harness-yellow.png' alt=''><img data-image='blue' class='active' src='images/dog_harness.png' alt=''>");
 
 		}
 		if (product=="cat-harness"){
 			$(".productName").html("Cat Harness");
 			$(".productDesc").html("A beautiful harness perfect for taking your cat out on hikes and walks whether they want to or not!");
-			$("#product-left").html("<img data-image='green' src='cat_harness-green.png' alt=''><img data-image='red' src='cat_harness.png' alt=''><img data-image='yellow' src='cat_harness-yellow.png' alt=''><img data-image='blue' class='active' src='cat_harness-blue.png' alt=''>");
+			$("#product-left").html("<img data-image='green' src='images/cat_harness-green.png' alt=''><img data-image='red' src='images/cat_harness.png' alt=''><img data-image='yellow' src='images/cat_harness-yellow.png' alt=''><img data-image='blue' class='active' src='images/cat_harness-blue.png' alt=''>");
 			
 		}
 		if (product=="food"){
 			$(".productName").html("Food Storage Unit");
 			$(".productDesc").html("A storage unit for keeping your pet's favorite snacks while on the go.");
-			$("#product-left").html("<img data-image='green' src='attachment.png' alt=''><img data-image='red' src='attachment.png' alt=''><img data-image='yellow' src='attachment.png' alt=''><img data-image='blue' class='active' src='attachment.png' alt=''>");
+			$("#product-left").html("<img data-image='green' src='images/attachment.png' alt=''><img data-image='red' src='images/attachment.png' alt=''><img data-image='yellow' src='images/attachment.png' alt=''><img data-image='blue' class='active' src='images/attachment.png' alt=''>");
 		}
 		if (product=="water"){
 			$(".productName").html("Water Storage Unit");
 			$(".productDesc").html("A water storage unit for keeping your pet's favorite drinks while on the go.");
-			$("#product-left").html("<img data-image='green' src='attachment.png' alt=''><img data-image='red' src='attachment.png' alt=''><img data-image='yellow' src='attachment.png' alt=''><img data-image='blue' class='active' src='attachment.png' alt=''>");
+			$("#product-left").html("<img data-image='green' src='images/attachment.png' alt=''><img data-image='red' src='images/attachment.png' alt=''><img data-image='yellow' src='images/attachment.png' alt=''><img data-image='blue' class='active' src='images/attachment.png' alt=''>");
 		}
 		if (product=="gps"){
 			$(".productName").html("GPS Tracker");
 			$(".productDesc").html("A GPS tracker so you never lose your pets.");
-			$("#product-left").html("<img data-image='green' src='collar.png' alt=''><img data-image='red' src='collar.png' alt=''><img data-image='yellow' src='collar.png' alt=''><img data-image='blue' class='active' src='collar.png' alt=''>");
+			$("#product-left").html("<img data-image='green' src='images/collar.png' alt=''><img data-image='red' src='images/collar.png' alt=''><img data-image='yellow' src='images/collar.png' alt=''><img data-image='blue' class='active' src='images/collar.png' alt=''>");
 		}
 		if (product=="backpack"){
 			$(".productName").html("Cat Backpack");
 			$(".productDesc").html("A beautiful backpack for making your cat carry your snacks.");
-			$("#product-left").html("<img data-image='green' src='backpack.png' alt=''><img data-image='red' src='backpack.png' alt=''><img data-image='yellow' src='backpack.png' alt=''><img data-image='blue' class='active' src='backpack.png' alt=''>");
+			$("#product-left").html("<img data-image='green' src='images/backpack.png' alt=''><img data-image='red' src='images/backpack.png' alt=''><img data-image='yellow' src='images/backpack.png' alt=''><img data-image='blue' class='active' src='images/backpack.png' alt=''>");
 		}
 	}
 
@@ -131,8 +119,6 @@ $(document).ready(function() {
 	for(;i<len;i++){
 		text += "<li> <div class='pname'> " + loadedCart[i].name + "</div> <div class='pcolor'> " + loadedCart[i].color + "</div> <div class='psize'>" +loadedCart[i].size+ "</div> <div class='pcost'> "+ loadedCart[i].cost + "</div> <button class='delete-item'>REMOVE</button> </li>";
 	}
-
-	// text = text.replace(/\n/g, "<br />");
 
 	$("#cart-content").html(text);
 
@@ -159,7 +145,6 @@ $(document).ready(function() {
   	var product = $(this).attr('data-image');
   	console.log(product);
   	localStorage.setItem("product", product);
-  	// $(".productName").html("Hi");
 
   })
 
@@ -172,9 +157,6 @@ $(document).ready(function() {
   	var color = $("input[name='color']:checked").attr('id');
   	var size = $("input[name='size']:checked").attr('id');
   	var quantity = $(".quantity").val();
-
-  	// var picture = $("product-section img[data-image=" + color + ']');
-  	// var quantity = 1;
 
   	for(i=0;i<quantity;i++){
   		var product = new Product(name, color, size, cost);
@@ -194,7 +176,6 @@ $(document).ready(function() {
   $("#clear-cart").click(function() {
   	localStorage.clear();
 
-  	// loadCart();
   	saveCart();
   	loadCart();
   });
@@ -206,21 +187,9 @@ $(document).ready(function() {
 $(document).on("click", "#clear-cart", function() {
 	localStorage.clear();
 
-  	// loadCart();
   	saveCart();
   	loadCart();
 
 });
-
-
-
-// $(document).on("click", "h4", function() {
-// 	var item = $(".product").attr('name');
-// 	if (item == "cat-harness"){
-// 		$(".productName").html("Cat Harness");
-
-// 	}
-
-// });
 
 

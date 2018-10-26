@@ -1,11 +1,8 @@
 /** Functions **/
-// localStorage.clear();
 
 function Product(name, color, size, cost) {
 	this.name = name;
-	// this.picture = picture;
 	this.color = color;
-	// this.quantity = quantity;
 	this.size = size;
 	this.cost = cost;
 }
