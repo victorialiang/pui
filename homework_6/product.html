@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muddy Paws Adventure Gear</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="scripts.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+          <li id="icon"><img src="paw.png" height="25" width="25"></li>
+          <li id="logo"><a href="index.html">Muddy Paws</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li>Contact</li>
+          <li class="sign-in" id="cart-number"><a href="cart.html"></a></li>
+          <li class="sign-in" id="cart-icon"><a href="cart.html"><img src="cart.png" height="25" width="25"></a></li>          <li class="sign-in">Sign In</li>
+        </ul>
+    </nav>
+
+    <div class="product-section">
+
+      <div id="product-left">
+        <!-- <img data-image="green" src="dog_harness-green.png" alt="">
+        <img data-image="red" src="dog_harness-red.png" alt="">
+        <img data-image="yellow" src="dog_harness-yellow.png" alt="">
+        <img data-image="blue" class="active" src="dog_harness.png" alt=""> -->
+      </div>
+
+      <!-- product description goes to right of the product image !-->
+
+      <div id="product-right">
+        <h3><div class="productName"> </div></h3>
+        <h3 class="page-price">$99</h3>
+        <p><div class="productDesc"></div></p>
+        <h6 class="label">SIZE</h6>
+
+          <div class="size-choose">
+            <input type="radio" name="size" id="tiny"/>
+            <label for="tiny">Tiny</label>
+
+            <input type="radio" name="size" id="small"/>
+            <label for="small">Small</label>
+
+            <input type="radio" name="size" id="medium"/>
+            <label for="medium">Medium</label>
+
+            <input type="radio" name="size" id="large"/>
+            <label for="large">Large</label>
+          </div>
+         <!--  <p class="sizes">
+            <li>T</li> 
+            <li>S</li> 
+            <li>M</li> 
+            <li>L</li>
+          </p> -->
+
+         <!--  <div class="size-choose">
+            <button>Tiny</button>
+            <button>Small</button>
+            <button>Medium</button>
+            <button>Large</button>
+          </div> -->
+
+
+        <h6 class="label">COLOR</h6>
+        <!-- <p class="sizes">
+            <span class="red-dot"></span>
+            <span class="blue-dot"></span>
+            <span class="green-dot"></span>
+            <span class="yellow-dot"></span>
+        </p> -->
+
+        <div class="color-choose">
+          <input data-image="red" type="radio" name="color" id="red"/>
+          <label for="red"><span class="red-dot"></span></label>
+
+          <input data-image="blue" type="radio" name="color" id="blue"/>
+          <label for="blue"><span class="blue-dot"></span></label>
+
+          <input data-image="green" type="radio" name="color" id="green"/>
+          <label for="green"><span class="green-dot"></span></label>
+
+          <input data-image="yellow" type="radio" name="color" id="yellow"/>
+          <label for="yellow"><span class="yellow-dot"></span></label>
+        </div>
+
+        <h6 class="label">QUANTITY</h6>
+
+
+
+        <input class="quantity" type="number" name="quantity" min="1"/>
+
+
+        <p>
+        <button id="button-storage" class="sec-button">ADD TO CART</button>
+      </p>
+      </div>
+    </div>
+
+    <!-- review section !-->
+    <div id="product-bottom">
+      <div id="product-bottom2">
+        <h4>Reviews</h4>
+          <div class="review">
+            <img class="review-pic" src="review.png">
+            <div class="review-right">
+              <img class="star" src="star.png">
+              <img class="star" src="star.png">
+              <img class="star" src="star.png">
+              <img class="star" src="star.png">
+              <img class="star" src="star.png">
+              <p>Great harness! My puppy loves it.</p>
+              <p>-Vicky L</p>
+            </div>
+          </div>
+          
+           <div class="review">
+            <img class="review-pic" src="review.png">
+            <div class="review-right">
+              <img class="star" src="star.png">
+              <img class="star" src="star.png">
+              <img class="star" src="star.png">
+              
+              <p>It's okay. It's just okay. Not the best.</p>
+              <p>-VY</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+   
+</body>
+
+</html>

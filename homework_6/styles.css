@@ -1,0 +1,465 @@
+/* COLORS */
+/* brown #653A14 */
+/* pinkish brownish bg #F5F1EF */
+
+
+body {
+	font-family: "Open Sans";
+	margin: 0;
+}
+
+/* NAV */
+
+nav {
+	margin: 0;
+	box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
+	overflow: hidden;
+	padding-top: 5px;
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+	display: inline;
+	float:left;
+	padding: 20px;
+	color: #653A14;
+	font-weight:300;
+
+}
+
+li a {
+	text-decoration: none;
+	color: #653A14;
+
+}
+
+.sign-in {
+	float: right;
+}
+
+#logo {
+	color: #653A14;
+	font-weight:700;
+}
+
+#icon {
+	padding: 0px;
+	padding-top: 15px;
+}
+
+/* FULL SCREEN IMG */
+
+.bg {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}​
+
+.container {
+	position: relative;
+	display: inline-block;	
+}
+
+
+.descr {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.button {
+	background-color: #653A14;
+	border: none;
+	color: white;
+	padding: 12px 70px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	font-weight: bold;
+	cursor: pointer;
+	border: 2px solid #653A14;
+
+
+}
+
+/* PRODUCT PAGE */
+
+#sidepic {
+	float: left;
+	width: 20%;
+    display: flex;
+    overflow: hidden;
+}
+#sidepic img {
+    flex-shrink: 0;
+    max-width:100%;
+	max-height:100%;
+   
+}
+
+/* reference: https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional; */
+
+#products {
+	width: 80%;
+	float: right;
+}
+
+#products-top {
+	padding: 30px;
+	padding-left: 40px;
+}
+
+h3 {
+	font-size: 2.3em;
+	color: #653A14;
+	display: inline-block;
+	margin: 0;
+}
+
+#products h3 {
+	width: 15%;
+}
+
+#filter {
+	width: 85%;
+	float: right;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+
+}
+
+.check-container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 20px;
+}
+
+/* PRODUCT BOTTOM */
+
+#products-bottom {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.product {
+	margin: 30px;
+	width: 25%;
+}
+
+.product img {
+	width: 65%;
+	margin-left: 20px;
+    margin-right: auto;
+}
+
+h4 {
+	display: inline-block;
+	color: #4A4A4A;
+	
+}
+
+#name {
+	width: 40%;
+}
+
+#price {
+	float: right;
+	width: 15%;
+	margin-left: 0px;
+}
+
+#colors {
+	width: 15%;
+	float:right;
+}
+
+.red-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #EE7A89;
+  border-radius: 50%;
+  display: inline-block;
+  /*border: 3px solid black;*/
+}
+
+.blue-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #79B0F1;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+.green-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #96C65E;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+.yellow-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #F3C67D;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+/* PRODUCT PAGE */
+
+.product-section {
+	width: 80%;
+	margin: auto;
+	margin-top: 2%;
+	position: relative;
+}
+
+#product-left {
+	width: 35%;
+	position: relative;
+}
+
+#product-left img {
+	width: 100%;
+	position: absolute;
+	float: left;
+	opacity: 0;
+	/*transition: all 0.3s ease;*/
+}
+
+#product-left img.active {
+	opacity: 1;
+}
+
+#product-right {
+	/*display: inline-block;*/
+	width: 45%;
+	margin: 20px;
+	margin-left: 100px;
+	float: right;
+	position: relative;
+}
+
+.page-price {
+	display: inline-block;
+	width: 15%;
+	float: right;
+}
+
+.label {
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	width: 21%;
+	margin-bottom: 3%;
+	/*display: inline-block;*/
+}
+
+.sizes {
+	display: inline-block;
+	/*width: 60%;*/
+	letter-spacing: 20px;
+	margin-bottom: 0px;
+}
+
+.sizes li {
+	/*display: inline-block;*/
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+li:hover,
+li:active,
+li:focus,
+li:target {
+	font-weight: bold;
+
+}
+
+.color-choose input,
+.size-choose input {
+	display: none;
+}
+
+
+
+label:hover{
+	cursor: pointer;
+
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-right: 3%;
+}
+
+#tiny:checked + label,
+#small:checked + label,
+#medium:checked + label,
+#large:checked + label {
+	font-weight: bold;
+}
+
+#red:checked + label .red-dot{
+	border: 3px solid black;
+}
+
+#blue:checked + label .blue-dot{
+	border: 3px solid black;
+}
+
+#green:checked + label .green-dot{
+	border: 3px solid black;
+}
+
+#yellow:checked + label .yellow-dot{
+	border: 3px solid black;
+}
+
+
+.sec-button {
+	background-color: white;
+	border: none;
+	color: #653A14;
+	padding: 12px 70px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	border: 2px solid #653A14;
+	margin-top: 5%;
+	cursor: pointer;
+}
+
+#product-bottom {
+	background-color: #F5F1EF;
+	margin-top: 3%;
+	/*position: relative;*/
+	width: 100%;
+	clear: both;
+}
+
+#product-bottom2 {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.review-pic {
+	margin-bottom: 20px;
+	width: 10%;
+	float: left;
+}
+
+.review-right {
+	display: inline-block;
+	width: 80%;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-size: 0.9em;
+
+}
+
+.star {
+	display: inline-block;
+	max-width: 20px;
+	max-height: 20px;
+}
+
+.review {
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* CART */
+
+#cart-content {
+	background-color: #F5F1EF;
+	margin: auto;
+}
+
+#cart-icon {
+	padding-right: 5px;
+}
+#cart-number {
+	margin: 0;
+	padding-left: 0;
+}
+
+.delete-item {
+	float: right;
+}
+
+#cart-left ul{
+	padding-inline-start: 0px;
+
+}
+
+#cart-left li{
+	padding: 1%;
+
+}
+
+#cart-right{
+	float: right;
+}
+
+.pname {
+	width: 30%;
+	display: inline-block;
+}
+
+.pcolor {
+	width: 10%;
+	display: inline-block;
+}
+
+.psize {
+	width: 10%;
+	display: inline-block;
+}
+
+.pcost {
+	width: 30%;
+	display: inline-block;
+	text-align: right;
+	/*float: right;*/
+}
+
+.delete-item{
+	background-color: white;
+	border: none;
+	color: #653A14;
+	padding: 5px 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	/*border: 1px solid #653A14;*/
+	/*margin-top: 5%;*/
+	cursor: pointer;
+}

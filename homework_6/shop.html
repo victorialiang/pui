@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muddy Paws Adventure Gear</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+          <li id="icon"><img src="paw.png" height="25" width="25"></li>
+          <li id="logo"><a href="index.html">Muddy Paws</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li>Contact</li>
+          <li class="sign-in" id="cart-number"><a href="cart.html"></a></li>
+          <li class="sign-in" id="cart-icon"><a href="cart.html"><img src="cart.png" height="25" width="25"></a></li>
+          <li class="sign-in">Sign In</li>
+        </ul>
+    </nav>
+
+    <div id="sidepic">
+      <img src="sidepic.png">
+    </div>
+
+    <div id="products">
+      <div id="products-top">
+          <h3>Shop</h3> 
+
+          <!-- checkbox filter for type of pet !-->
+
+          <p id="filter">
+            FILTER 
+            <label class="check-container">cat
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="check-container">dog
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </p>
+          
+      </div>
+
+      <!-- grid of 6 different products !-->
+
+      <div id="products-bottom">
+        <div class="product" data-image="dog-harness">
+<!--         <input data-image="dog-harness" type="radio" name="product" id="dog-harness"/> -->
+          <!-- <label for="dog-harness"> -->
+        <!-- <div class="product" id="dog-harness"> -->
+          <a href="product.html"><img src="dog_harness.png"></a>
+
+          <div id="colors">
+            <span class="red-dot"></span>
+            <span class="blue-dot"></span>
+            <span class="green-dot"></span>
+            <span class="yellow-dot"></span>
+          </div>
+
+          <a href="product.html"><h4 id="name">Dog Harness</h4></a>
+          <h4 id="price">$99</h4>
+
+          <!-- </label> -->
+
+
+        </div>
+
+         <div class="product" data-image="cat-harness">
+          <a href="product.html"><img src="cat_harness.png"></a>
+
+          <div id="colors">
+            <span class="red-dot"></span>
+            <span class="blue-dot"></span>
+            <span class="green-dot"></span>
+            <span class="yellow-dot"></span>
+          </div>
+
+          <a href="product.html"><h4 id="name">Cat Harness</h4></a>
+          <h4 id="price">$99</h4>
+        </div>
+
+         <div class="product" data-image="food">
+          <a href="product.html"><img src="attachment.png"></a>
+
+          <div id="colors">
+            <span class="red-dot"></span>
+            <span class="blue-dot"></span>
+            <span class="green-dot"></span>
+            <span class="yellow-dot"></span>
+          </div>
+
+         <a href="product.html"> <h4 id="name">Food Storage Attachment</h4></a>
+          <h4 id="price">$99</h4>
+        </div>
+
+         <div class="product" data-image="water">
+          <a href="product.html"><img src="attachment.png"></a>
+
+          <div id="colors">
+            <span class="red-dot"></span>
+            <span class="blue-dot"></span>
+            <span class="green-dot"></span>
+            <span class="yellow-dot"></span>
+          </div>
+
+         <a href="product.html"> <h4 id="name">Water Storage Attachment</h4></a>
+          <h4 id="price">$99</h4>
+        </div>
+
+         <div class="product" data-image="gps">
+          <a href="product.html"><img src="collar.png"></a>
+
+          <div id="colors">
+            <span class="red-dot"></span>
+            <span class="blue-dot"></span>
+            <span class="green-dot"></span>
+            <span class="yellow-dot"></span>
+          </div>
+
+          <a href="product.html"><h4 id="name">GPS Tracker Collar</h4></a>
+          <h4 id="price">$99</h4>
+        </div>
+
+         <div class="product" data-image="backpack">
+          <a href="product.html"><img src="backpack.png"></a>
+
+          <div id="colors">
+            <span class="red-dot"></span>
+            <span class="blue-dot"></span>
+            <span class="green-dot"></span>
+            <span class="yellow-dot"></span>
+          </div>
+
+          <a href="product.html"><h4 id="name">Cat Backpack</h4></a>
+          <h4 id="price">$99</h4>
+        </div>
+      </div>
+    </div>
+
+    
+</body>
+
+</html>
