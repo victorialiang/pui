@@ -1,0 +1,285 @@
+/* yellow: #FFCE00 */
+
+@font-face {
+	font-family: Frutiger-Roman;
+	src: url(fonts/FrutigerLTStd-Roman.otf);
+}
+
+@font-face {
+	font-family: Frutiger-Light;
+	src: url(fonts/FrutigerLTStd-Light.otf);
+}
+
+@font-face {
+	font-family: Frutiger-Bold;
+	src: url(fonts/FrutigerLTStd-Bold.otf);
+}
+
+@font-face {
+	font-family: Frutiger-Black;
+	src: url(fonts/FrutigerLTStd-Black.otf);
+}
+
+div {
+	/*font-family: Frutiger-Light;*/
+	 font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”,
+    “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
+/*    font-weight: lighter;
+*/}
+
+h1 {
+	font-size: 2.7em;
+	/*font-family: Frutiger-Bold;*/
+	margin: 2rem 0 1rem 0;
+	font-weight: bold;
+	/*color: gray;*/
+}
+
+h2 {
+	/*font-family: Frutiger-Bold;*/
+	font-size: 2.3em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.2em;
+	/*font-family: Frutiger-Roman;*/
+}
+
+/* NAV */
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+#nav {
+	padding-top: 15px;
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-family: Frutiger-Light;*/
+	font-weight: lighter;
+
+}
+
+ul {
+	list-style-type: none;
+    margin: 0;
+    /*padding: 100;*/
+
+}
+
+#logo {
+	float: left;
+	/*padding: 0;*/
+	/*vertical-align: top;*/
+
+}
+
+#logo img {
+	max-width: 60%;
+}
+
+li {
+	display: inline;
+	float: right;
+	padding: 25px;
+	letter-spacing: 2px;
+	/*font-weight: 300;*/
+
+}
+
+/* WORK */
+
+
+
+#intro {
+	text-align: center;
+}
+
+#intro p {
+	margin-top: 8%;
+	margin-bottom: 5%
+}
+
+#intro em {
+	color: #FFCE00;
+	font-style: normal;
+
+}
+
+#work {
+	margin: auto;
+	padding-top: 2%;
+}
+
+.projects-grid {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+
+.project img {
+	flex-shrink: 0;
+	height: auto;
+	width: auto;
+	max-width: 550px;
+	max-height: 400px;
+	/*min-width: 100%;
+	min-height: 100%;*/
+	display: block;
+	object-fit: cover;
+	overflow: hidden;
+
+}
+.project {
+/*	max-width: 550px;
+	max-height: 400px;*/
+	max-width: 550px;
+	max-height: 400px;
+	/*background-color: gray;*/
+	/*display: inline-block;*/
+
+/*	flex-direction: row;
+*/	vertical-align: top;
+	margin: 1%;
+
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+
+	
+}
+
+
+.overlay {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: .5s ease;
+     /*background-color: white;*/
+     background-color: #FFCE00;
+
+}
+
+.project:hover .overlay {
+  	 opacity: 0.85;
+}
+
+.text {
+	 /*color: black;*/
+	 /*font-size: 20px;*/
+	 position: absolute;
+	 top: 20%;
+  	 left: 15%;
+  	 right: 15%;
+  	/* -webkit-transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);*/
+	 text-align: left;
+	 /*color: white;*/
+	 /*z-index: 99;*/
+}
+
+/* HOVER UNDERLINE COPYPASTA */
+.custom-underline {
+  position: relative;
+  display: inline-block;
+ /* font-size: 24px;
+  font-weight: 400;*/
+  text-align: center;
+}
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  /*color: #fff;*/
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.link-container .custom-underline::after {
+  top: 100%;
+  height: 3px;
+  width: 0%;
+  left: 3%;
+  background-color: #FFCE00;
+    transition: 0.5s ease all .3s;
+}
+
+.link-container:hover .custom-underline::after {
+  width: 90%;
+    transition: 0.3s ease all;
+}
+
+/* FOOTER */
+
+.footer {
+	margin-top: 4%;
+	margin-bottom: 5%;
+	padding-top: 2%;
+	font-size: 0.85em;
+	color: gray;
+}
+
+.footer a {
+	color: gray;
+
+}
+
+.footer img{
+	display: block;
+	margin: auto;
+	text-align: center;
+	max-width: 7%;
+
+}
+
+.footer .row {
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+
+}
+
+#center{
+	text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid  #E5E5E5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0
+}
+
+.links{
+	float: right;
+
+}
