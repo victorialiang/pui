@@ -1,4 +1,5 @@
 /* yellow: #FFCE00 */
+/* gray: #4A4A4A */
 
 @font-face {
 	font-family: Frutiger-Roman;
@@ -29,6 +30,7 @@ div {
 /*    font-weight: lighter;
 */}
 
+/*used for big intro header*/
 h1 {
 	font-size: 2.7em;
 	/*font-family: Frutiger-Bold;*/
@@ -37,15 +39,29 @@ h1 {
 	/*color: gray;*/
 }
 
+/*used for titles and hover titles*/
 h2 {
 	/*font-family: Frutiger-Bold;*/
 	font-size: 2.3em;
 	font-weight: bold;
+	margin-top: 1rem;
 }
 
+/*used for hover captions*/
 h4 {
 	font-size: 1.2em;
 	/*font-family: Frutiger-Roman;*/
+}
+
+/*used for small caps labels*/
+h5 {
+	margin-top: 3em;
+	font-size: 0.85em;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #F38378;
+
 }
 
 /* NAV */
@@ -60,9 +76,8 @@ a:hover {
 
 #nav {
 	padding-top: 15px;
-	/*font-family: 'Open Sans', sans-serif;*/
-	/*font-family: Frutiger-Light;*/
 	font-weight: lighter;
+    font-size: 0.85em;
 
 }
 
@@ -89,11 +104,15 @@ li {
 	float: right;
 	padding: 25px;
 	letter-spacing: 2px;
-	/*font-weight: 300;*/
+	/*font-weight: 600;*/
 
 }
 
 /* WORK */
+
+.row {
+	margin-bottom: 0;
+}
 
 
 
@@ -222,6 +241,7 @@ li {
   content: "";
   position: absolute;
 }
+
 
 .link-container .custom-underline::after {
   top: 100%;
