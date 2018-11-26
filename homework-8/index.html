@@ -11,6 +11,8 @@
 
       <script src="assets/js/jquery-3.3.1.js"></script>
       <script src="assets/js/scripts.js" type="text/javascript"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+
 
 
 
@@ -43,7 +45,7 @@
           <div class="col s6">
             <h1>Hello!</h1>
             <h1>I'm <em>Victoria Liang</em>.</h1>
-            <p>I'm a designer passionate about understanding people and problems and crafting meaningful experiences. Take a look at my products!</p>
+            <p>I'm a designer passionate about understanding people and problems and crafting meaningful experiences. Feel free to take a look at my work!</p>
           </div>
           <div class="col s3"></div>
         </div>
@@ -123,6 +125,29 @@
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+      <script>
+        // ScrollReveal().reveal('.intro');
+
+
+        ScrollReveal().reveal('#project', {
+            delay: 500,
+            useDelay: 'onload',
+            reset: true,
+        })
+
+        // ScrollReveal().reveal('#project', {
+        //     delay: 0,
+        //     interval: 80
+        // })
+
+        // preload pricing illustration
+        // var img = new Image();
+        // img.src = "/img/license.svg";
+      </script>
+
+
+
+
     </body>
   </html>
 
