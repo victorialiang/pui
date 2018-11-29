@@ -26,10 +26,12 @@
     	<div class="col s10">
     	<!--<nav>-->
 	    	<div id="nav">
+          <ul class=nav">
 	    		<li id="logo"><a href="/"><img src="assets/images/logo.png"></img></a></li>
-	    		<li class="link-container"><a href="#" class="custom-underline">RESUME</a></li>
-	    		<li class="link-container"><a href="#" class="custom-underline">ABOUT</a></li>
-	    		<li class="link-container"><a href="#" class="custom-underline">WORK</a></li>
+	    		<li class="link-container nav"><a href="#" class="custom-underline">RESUME</a></li>
+	    		<li class="link-container nav"><a href="#" class="custom-underline">ABOUT</a></li>
+	    		<li class="link-container nav"><a href="#" class="custom-underline">WORK</a></li>
+        </ul>
 	    	</div>
    		 <!--</nav>-->
    		</div>
@@ -43,11 +45,15 @@
         <div class="row">
           <div class="col s3"></div>
           <div class="col s6">
+            <!-- <div class="slide-in-right"> -->
             <h1>Hello!</h1>
             <h1>I'm <em>Victoria Liang</em>.</h1>
             <p>I'm a designer passionate about understanding people and problems and crafting meaningful experiences. Feel free to take a look at my work!</p>
           </div>
-          <div class="col s3"></div>
+        <!-- </div> -->
+          <div class="col s3">
+            <!-- <div class="slide-in-right"><img src="assets/images/logo.png"></img> -->
+          </div>
         </div>
 
       </div>
@@ -129,11 +135,19 @@
         // ScrollReveal().reveal('.intro');
 
 
-        ScrollReveal().reveal('#project', {
-            delay: 500,
+        ScrollReveal().reveal('.row', {
+            delay: 200,
             useDelay: 'onload',
-            reset: true,
-        })
+            //reset: true,
+            interval: 400
+        });
+
+        ScrollReveal().reveal('.project', {
+            delay: 600,
+            useDelay: 'onload',
+            //reset: true,
+            //interval: 400
+        });
 
         // ScrollReveal().reveal('#project', {
         //     delay: 0,
